@@ -10,6 +10,8 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressSanitizer());
 
+var port = process.env.PORT || 1313;
+
 var blogSchema = new mongoose.Schema({
   title: String,
   image: String,
@@ -94,6 +96,6 @@ app.post('/blogs_delete/:id', function(req, res){
   });
 });
 
-app.listen(1313, function(){
+app.listen(port, function(){
   console.log("Blogging app sunn rha hai!")
 })
