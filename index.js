@@ -5,7 +5,8 @@ var express     = require('express'),
     mongoose    = require('mongoose');
 mongoose.connect("mongodb://localhost/restful_blog_app", {
     useMongoClient: true
-})
+});
+app.set("view_engine", "ejs");
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressSanitizer());
