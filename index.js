@@ -3,7 +3,7 @@ var express     = require('express'),
     bodyParser = require('body-parser'),
     expressSanitizer = require('express-sanitizer'),
     mongoose    = require('mongoose');
-mongoose.connect("mongodb://localhost/restful_blog_app", {
+mongoose.connect("mongodb://octacode2:octacode@ds145293.mlab.com:45293/restful_blog_app", {
     useMongoClient: true
 });
 app.set("view_engine", "ejs");
