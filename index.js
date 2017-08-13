@@ -11,7 +11,7 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressSanitizer());
 
-var port = process.env.PORT || 1313;
+var port = process.env.PORT || 5000;
 
 var blogSchema = new mongoose.Schema({
   title: String,
