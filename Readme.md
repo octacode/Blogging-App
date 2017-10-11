@@ -1,1 +1,3 @@
- https://octa-blog.herokuapp.com/blogs
+App used to blog
+
+https://octa-blog.herokuapp.com/blogs
